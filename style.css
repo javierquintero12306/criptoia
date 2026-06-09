@@ -1,0 +1,153 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  background:#020617;
+  color:white;
+  font-family:'Poppins',sans-serif;
+}
+
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:25px 8%;
+  position:fixed;
+  width:100%;
+  z-index:1000;
+  background:rgba(0,0,0,0.3);
+  backdrop-filter:blur(10px);
+}
+
+.logo{
+  font-size:2rem;
+  font-weight:800;
+}
+
+.logo span{
+  color:#00aaff;
+}
+
+nav ul{
+  display:flex;
+  gap:30px;
+  list-style:none;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+}
+
+.hero{
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:0 10%;
+  background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)),
+  url('assets/hero.jpg');
+  background-size:cover;
+  background-position:center;
+}
+
+.hero h1{
+  font-size:4rem;
+  margin-bottom:20px;
+}
+
+.hero span{
+  color:#00aaff;
+}
+
+.hero p{
+  font-size:1.2rem;
+  max-width:700px;
+  margin:auto;
+}
+
+.buttons{
+  margin-top:40px;
+}
+
+.btn-primary,
+.btn-secondary{
+  padding:15px 35px;
+  border-radius:50px;
+  text-decoration:none;
+  margin:10px;
+  display:inline-block;
+}
+
+.btn-primary{
+  background:#00aaff;
+  color:white;
+}
+
+.btn-secondary{
+  border:1px solid #00aaff;
+  color:#00aaff;
+}
+
+.features,
+.info,
+.cta{
+  padding:120px 8%;
+  text-align:center;
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;
+  margin-top:60px;
+}
+
+.card,
+.info-box{
+  background:#071126;
+  padding:40px;
+  border-radius:20px;
+}
+
+.card i{
+  font-size:3rem;
+  color:#00aaff;
+  margin-bottom:20px;
+}
+
+footer{
+  padding:50px;
+  text-align:center;
+  background:#01040d;
+}
+
+.whatsapp{
+  position:fixed;
+  bottom:30px;
+  right:30px;
+  width:65px;
+  height:65px;
+  background:#25d366;
+  border-radius:50%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:white;
+  font-size:2rem;
+  text-decoration:none;
+}
+
+@media(max-width:768px){
+  nav ul{
+    display:none;
+  }
+
+  .hero h1{
+    font-size:2.3rem;
+  }
+}
